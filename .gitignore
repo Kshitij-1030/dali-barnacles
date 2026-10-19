@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+
+# challenge photos and masks (provided by DALI; download them from the challenge page)
+img1.png
+img2.png
+mask1.png
+mask2.png
+masked_img1.png
+masked_img2.png
+unseen_img1.png
+unseen_img2.png
+
+# scratch output
+unseen1_raw_overlay.png

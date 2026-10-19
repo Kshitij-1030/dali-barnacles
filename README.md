@@ -14,12 +14,12 @@ The analysis is in [`barnacles.ipynb`](barnacles.ipynb). The helper functions (g
 
 Scored on the right half of each photo (trained on the left half). Chance is the F1 of random points in the same box.
 
-| Method | `img1` right half: F1 (chance) | Notes |
+| Method | `img1` right half: F1 (chance) | `img2` right half: F1 (chance) |
 |---|---|---|
-| Brightness threshold | unusable | |
-| Template matching | 0.43 (0.20) | |
-| Blob detection (DoG) | 0.26 (0.17) | |
-| Random forest, balanced negatives | about 0.73 (0.20) | `img2` right half: about 0.56 (0.18) |
+| Brightness threshold | unusable | not scored |
+| Template matching | 0.43 (0.20) | not tested |
+| Blob detection (DoG) | 0.26 (0.17) | not tested |
+| Random forest, balanced negatives | about 0.73 (0.20) | about 0.56 (0.18) |
 
 On a fully unseen labeled photo (`img2` with a classifier trained only on `img1`) the forest scores only about 0.38 at threshold 0.1 and overcounts by 65% there. At threshold 0.2 the count error drops to +8.5%, but the F1 is also lower (0.32), so the total depends heavily on the threshold.
 
